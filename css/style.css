@@ -32,7 +32,7 @@ body {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -45,9 +45,9 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
-  margin: 2rem 0 1rem;
+  margin-top: 7rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.2em;
@@ -131,11 +131,19 @@ h2 {
 }
 
 /* Movie List */
+.main-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
 #movie-list {
   background-color: var(--bg-card);
   padding: 1.5rem;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex: 2;
+  min-width: 300px;
 }
 
 #films {
@@ -205,6 +213,8 @@ input[type="checkbox"] {
   padding: 1.5rem;
   border-radius: var(--border-radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 250px;
 }
 
 #achievement-list {
