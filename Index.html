@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,486;1,486&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/javascript.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Watchlist</h1>
+    <section id="add-movie">
+        <input type="text" id="movie-input" placeholder="Add a movie or series...">
+        <button id="add-button">✔</button>
+    </section>
+
+    <section id="movie-list">
+        <h2>My Movies</h2>
+        <ul id="films">
+            <li>
+                <input type="checkbox" class="watched-checkbox">
+                <span class="movie-title">Movie 1</span>
+                <div class="stars">
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <aside id="achievements">
+        <h2>Achievements</h2>
+        <ul id="achievement-list">
+            <li>No achievements unlocked yet</li>
+        </ul>
+    </aside>
+</body>
+</html>
