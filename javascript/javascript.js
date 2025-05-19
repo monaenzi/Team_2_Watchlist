@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const achievements = {
         1: "Movie-starter: You watched your first movie!",
-        5: "Movie-enthusiast: 5 movies, you got it rollin'",
+        5: "Movie-enthusiast: 5 movies, you got it rollin'!",
         10: "Movie-Maniac: You've watched 10 movies!",
         25: "Film-aholic: 25 movies watched!",
         50: "Movie-expert: 50 movies angesehen!",
