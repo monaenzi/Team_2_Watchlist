@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #272727;
+  color: #f1f1f1;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Global Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Headlines */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d4d4d4;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+button {
+  background-color: #67d7ee;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0096c7;
+}
+
+/* Inputs */
+input, select, textarea {
+  background-color: #2e2e2e;
+  color: white;
+  border: 1px solid #444;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  transition: border-color 0.2 ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* Cards */
+.card {
+  background-color: #3b3b3b;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  min-height: 80px
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Style for info and rating */
+.badge-info {
+  display: inline-block;
+  background-color: #444;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 0.3rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.3rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rating-star {
+  font-size: 1.5rem;
+  color: #444; /* inactive color */
+  transition: color 0.2s;
+}
+
+.rating-star.active {
+  color: #67d7ee; /* active gold */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
