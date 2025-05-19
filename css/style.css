@@ -4,8 +4,8 @@
   --bg-card: #353535;
   --text-primary: #f1f1f1;
   --text-secondary: #d4d4d4;
-  --accent: #67d7ee;
-  --accent-hover: #0096c7;
+  --accent: #e24c4c;
+  --accent-hover: #cf1414;
   --border-radius: 0.5rem;
   --border: #444;
   --transition-speed: 0.2s;
@@ -47,7 +47,7 @@ h1, h2 {
 h1 {
   font-size: 5rem;
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 6rem;
   font-weight: 700;
   color: var(--accent);
   letter-spacing: 0.2em;
@@ -85,6 +85,7 @@ h2 {
   font-size: 1.8rem;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 0.5rem;
+  letter-spacing: 0.1em;
 }
 
 /* Add Movie Section */
@@ -117,7 +118,7 @@ h2 {
   background-color: var(--accent);
   color: white;
   border: none;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: background-color 0.3s ease, transform var(--transition-speed);
@@ -134,7 +135,7 @@ h2 {
 .main-content {
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  flex-wrap: wrap;
 }
 
 #movie-list {
@@ -168,7 +169,7 @@ h2 {
 }
 
 input[type="checkbox"] {
-  accent-color: #00ccff;
+  accent-color: #f33e3e;
   transform: scale(1.2);
 }
 
@@ -221,8 +222,18 @@ input[type="checkbox"] {
   list-style: none;
   color: var(--text-secondary);
   font-style: italic;
-   padding-left: 1rem;
+  padding-left: 1rem;
   margin-top: 0.5rem;
+}
+
+#achievement-list li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--accent);
+}
+
+#achievement-list li:last-child {
+  border-bottom: none;
 }
 
 #achievement-list li::before {
