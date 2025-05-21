@@ -239,3 +239,18 @@ input[type="checkbox"] {
 #achievement-list li::before {
   content: "🏆 ";
 }
+
+.delete-button {
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #aa0000;
+    transition: color 0.2s;
+}
+
+.delete-button:hover {
+    color: #ff0000;
+}
+

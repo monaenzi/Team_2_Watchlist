@@ -84,6 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
             li.appendChild(checkbox);
             li.appendChild(span);
             li.appendChild(starsContainer);
+
+            const deleteButton = document.createElement('button');
+                deleteButton.textContent = '🗑️';
+                deleteButton.className = 'delete-button';
+                deleteButton.addEventListener('click', function() {
+                    li.remove();
+                    updateAchievements();
+                });
+
+                li.appendChild(deleteButton);
+
             
             filmsList.appendChild(li);
             
